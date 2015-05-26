@@ -220,7 +220,7 @@ img#mobile.animate {
 }
 
 
-@media(min-width:601px)  and (max-width:1200px) {
+@media(min-width:768px)  and (max-width:1200px) {
 
 	.content_devices img#desktop {
 		width: 293px;
@@ -234,3 +234,41 @@ img#mobile.animate {
 	}
 
 }
+
+@media(max-width:768px)  {
+
+	.content_devices img#desktop {
+		width: 260px;
+	}
+	.content_devices img#laptop {
+		display: none;
+	}
+
+	.content_devices img#mobile {
+		display: none;
+	}
+
+}
+
+@media(max-width:768px)  {
+
+	h1 {
+		font-size: 35px !important;
+		text-align: center !important;	
+	}
+
+	h2 {
+		font-size: 35px !important;
+		text-align: center !important;
+		display: block !important;
+		line-height: 1.5em !important;
+	}
+
+	.content_icons i {
+		margin-top: 5px;
+		font-size: 3em;
+
+	}
+
+}
+
