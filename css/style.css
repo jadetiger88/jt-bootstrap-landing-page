@@ -104,6 +104,9 @@ section h1 {
 
 .section_showcase img {
 	width: 100%;
+	float: right;
+	position: relative;
+	margin-right: -500px;
 }
 
 .list_feature li {
@@ -123,7 +126,7 @@ section h1 {
 }
 
 .fa-lg {
-	font-size: 4em;
+	font-size: 5em;
 }
 
 .content_icons {
@@ -136,6 +139,7 @@ section h1 {
 .content_icons i {
 	display: block;
 	margin-bottom: 15px;
+	padding: 20px;
 }
 
 .content_devices {
@@ -176,4 +180,36 @@ section h1 {
 #footer_main li {
 	list-style: square;
 	line-height: 2em;
+}
+
+.animate {
+	-moz-transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+
+	-moz-animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+img#showcase_imac.animate {
+	-moz-transform:translate(-40em, 0);
+	-webkit-transform:translate(-40em, 0);
+	transform:translate(-40em, 0);
+}
+
+img#laptop.animate {
+	-moz-transform:translate(12em, 0);
+	-webkit-transform:translate(12em, 0);
+	transform:translate(12em, 0);
+}
+
+img#mobile.animate {
+	-moz-transform:translate(-8em, 0);
+	-webkit-transform:translate(-8em, 0);
+	transform:translate(-8em, 0);
 }

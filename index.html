@@ -83,7 +83,7 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <img src="img/imac.png">
+            <img id="showcase_imac" src="img/imac.png">
           </div>
         </div>
       </div>
@@ -113,9 +113,9 @@
         <div class="row">
          <div class="col-md-12">
              <h1>Proin sit amet elit luctus</h1>
-             <img id="laptop" src="img/laptop.png">
-             <img id="desktop" src="img/desktop.png">
-             <img id="mobile" src="img/mobile.png">
+             <img id="laptop"   src="img/laptop.png">
+             <img id="desktop"  src="img/desktop.png">
+             <img id="mobile"   src="img/mobile.png">
           </div>
         </div>
       </div>
@@ -162,5 +162,22 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#showcase_imac').addClass('animate');
+        $(window).scroll(function() {
+          var y = $(this).scrollTop();
+          if (y >= 300) {
+            $('#laptop').addClass('animate');
+            $('#mobile').addClass('animate');
+          }
+
+          if (y < 300) {
+            $('#laptop').removeClass('animate');
+            $('#mobile').removeClass('animate');
+          }
+        });
+      }); 
+    </script>
   </body>
 </html>
